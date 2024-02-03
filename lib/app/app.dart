@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:api_mock/app/app_cubit.dart';
 import 'package:api_mock/app/app_skeleton.dart';
 import 'package:api_mock/core/l10n/generated/l10n.dart';
@@ -12,13 +13,15 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 class App extends StatelessWidget {
   const App({
-    super.key,
+    Key? key,
     required this.notificationService,
     required this.postRepository,
-  });
+    required this.initialLocale,
+  }) : super(key: key);
 
   final NotificationService notificationService;
   final ApiRepository postRepository;
+  final Locale initialLocale;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +34,8 @@ class App extends StatelessWidget {
                 )),
         BlocProvider<CreatingCubit>(
             create: (_) => CreatingCubit(postRepository)),
-        BlocProvider<SettingsCubit>(create: (_) => SettingsCubit()),
+        BlocProvider<SettingsCubit>(
+            create: (_) => SettingsCubit(initialLocale)),
       ],
       child: MaterialApp(
         title: 'Reddit api',
@@ -44,6 +48,7 @@ class App extends StatelessWidget {
           GlobalWidgetsLocalizations.delegate,
         ],
         supportedLocales: AppLocalizations.delegate.supportedLocales,
+        locale: initialLocale,
         home: AppSkeleton(notificationService),
       ),
     );

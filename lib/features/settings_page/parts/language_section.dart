@@ -21,6 +21,13 @@ class _LanguageSectionState extends State<LanguageSection> {
   bool isEnglishSelected = true;
 
   @override
+  void initState() {
+    isEnglishSelected =
+        context.read<SettingsCubit>().initialLocale.languageCode == "en";
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,

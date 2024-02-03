@@ -9,18 +9,24 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 
 Future<void> main() async {
+  late Locale initialLocale;
+  Future<void> getSystemLocale() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    initialLocale = WidgetsBinding.instance.window.locale;
+  }
+
   WidgetsFlutterBinding.ensureInitialized();
   final postItemDatabase = await _configPostItemDatabase();
   final notificationService = LocalNotificationService();
   final apiService = HttpConnection();
   final postRepository = ApiRepository(apiService, postItemDatabase);
-
-  runApp(
-    App(
-      notificationService: notificationService,
-      postRepository: postRepository,
-    ),
-  );
+  getSystemLocale().then((_) => runApp(
+        App(
+          notificationService: notificationService,
+          postRepository: postRepository,
+          initialLocale: initialLocale,
+        ),
+      ));
 }
 
 Future<PostItemDatabase> _configPostItemDatabase() async {
