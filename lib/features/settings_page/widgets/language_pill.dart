@@ -21,7 +21,8 @@ class LanguagePill extends StatelessWidget {
             isSelected ? AppColors.primary : AppColors.inactiveColor,
         label: Text(
           label,
-          style: TextStyleData.languagePill,
+          style: TextStyleData.languagePill
+              .copyWith(color: isSelected ? null : Colors.white38),
         ),
       ),
     );
