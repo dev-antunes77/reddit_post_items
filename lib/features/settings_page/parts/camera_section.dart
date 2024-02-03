@@ -57,6 +57,7 @@ class CameraSectionState extends State<CameraSection> {
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
     return FutureBuilder<void>(
       future: _futureCameraCtrl,
       builder: (context, snapshot) {
@@ -69,7 +70,7 @@ class CameraSectionState extends State<CameraSection> {
             child: Column(
               children: [
                 SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.8,
+                    height: screenSize.height * 0.8,
                     child: CameraPreview(_controller)),
                 Padding(
                   padding: const EdgeInsets.only(top: 10),

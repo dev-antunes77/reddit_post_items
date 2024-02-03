@@ -15,12 +15,9 @@ class HomeScaffold extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: true,
       body: SafeArea(
-        child: ScrollConfiguration(
-          behavior: const ScrollBehavior(),
-          child: Padding(
-            padding: const EdgeInsets.only(top: 18, left: 12, right: 12),
-            child: child,
-          ),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 18, left: 12, right: 12),
+          child: child,
         ),
       ),
       bottomNavigationBar: bottomNavigationBar,
