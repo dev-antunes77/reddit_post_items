@@ -33,6 +33,14 @@
         }
     }
 },
+"handlePostError":"Error on handleing post: {error}",
+"@handlePostError":{
+    "placeholders": {
+        "error": {
+          "type": "String"
+        }
+    }
+},
 "takePicture":"Take a picture",
 "yes":"Yes",
 "no":"No"

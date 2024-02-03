@@ -250,6 +250,16 @@ class AppLocalizations {
     );
   }
 
+  /// `Error on handleing post: {error}`
+  String handlePostError(String error) {
+    return Intl.message(
+      'Error on handleing post: $error',
+      name: 'handlePostError',
+      desc: '',
+      args: [error],
+    );
+  }
+
   /// `Take a picture`
   String get takePicture {
     return Intl.message(

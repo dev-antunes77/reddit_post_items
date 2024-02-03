@@ -20,9 +20,11 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'pt';
 
-  static String m0(error) => "Erro ao iniciar o app: ${error}";
+  static String m0(error) => "Erro nessa postagem: ${error}";
 
-  static String m1(language) =>
+  static String m1(error) => "Erro ao iniciar o app: ${error}";
+
+  static String m2(language) =>
       "Tem certeza que deseja alterar o idioma para ${language}?";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
@@ -38,14 +40,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "editing": MessageLookupByLibrary.simpleMessage("Edição"),
         "english": MessageLookupByLibrary.simpleMessage("Inglês"),
         "error": MessageLookupByLibrary.simpleMessage("Erro"),
+        "handlePostError": m0,
         "home": MessageLookupByLibrary.simpleMessage("Início"),
         "no": MessageLookupByLibrary.simpleMessage("Não"),
         "options": MessageLookupByLibrary.simpleMessage("Opções"),
         "portuguese": MessageLookupByLibrary.simpleMessage("Português"),
-        "resumeAppError": m0,
+        "resumeAppError": m1,
         "selectYourLanguage":
             MessageLookupByLibrary.simpleMessage("Selecione seu idioma"),
-        "setLanguageConfimation": m1,
+        "setLanguageConfimation": m2,
         "settings": MessageLookupByLibrary.simpleMessage("Configurações"),
         "takePicture": MessageLookupByLibrary.simpleMessage("Tirar foto"),
         "timesUp": MessageLookupByLibrary.simpleMessage("Ops!"),

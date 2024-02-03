@@ -33,6 +33,14 @@
         }
     }
 },
+"handlePostError":"Erro nessa postagem: {error}",
+"@handlePostError":{
+    "placeholders": {
+        "error": {
+          "type": "String"
+        }
+    }
+},
 "takePicture":"Tirar foto",
 "yes":"Sim",
 "no":"Não"
