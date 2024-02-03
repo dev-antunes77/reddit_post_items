@@ -15,7 +15,7 @@ final class HivePostItemDatabase implements PostItemDatabase {
   @override
   Future<void> create(PostItem item) async {
     final itemBox = await _openBox();
-    return itemBox.put(item.id, PostItemHive.fromPostItem(item));
+    return itemBox.put(item.hiveIndex, PostItemHive.fromPostItem(item));
   }
 
   @override

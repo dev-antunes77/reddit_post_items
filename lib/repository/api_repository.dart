@@ -25,8 +25,12 @@ final class ApiRepository {
       _postItemdatabase.get();
 
   Future<PostItem> create(PostItem item) async {
-    final toCreate =
-        item.copyWith(id: AppUtils.generateRandomId(), fromHive: true);
+    final items = await _postItemdatabase.get();
+    final newHiveIndex = items.isEmpty ? 0 : items.length;
+    final toCreate = item.copyWith(
+        id: AppUtils.generateRandomId(),
+        hiveIndex: newHiveIndex,
+        fromHive: true);
     await _postItemdatabase.create(toCreate);
     return toCreate;
   }

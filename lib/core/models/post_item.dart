@@ -9,6 +9,7 @@ class PostItem {
     required this.numberOfComments,
     required this.createdAt,
     this.fromHive = false,
+    this.hiveIndex = 0,
   });
   final String id;
   final String title;
@@ -17,6 +18,7 @@ class PostItem {
   final int numberOfComments;
   final DateTime createdAt;
   final bool fromHive;
+  final int hiveIndex;
 
   PostItem copyWith({
     String? id,
@@ -26,6 +28,7 @@ class PostItem {
     int? numberOfComments,
     DateTime? createdAt,
     bool? fromHive,
+    int? hiveIndex,
   }) {
     return PostItem(
       id: id ?? this.id,
@@ -35,6 +38,7 @@ class PostItem {
       numberOfComments: numberOfComments ?? this.numberOfComments,
       createdAt: createdAt ?? this.createdAt,
       fromHive: fromHive ?? this.fromHive,
+      hiveIndex: hiveIndex ?? this.hiveIndex,
     );
   }
 }

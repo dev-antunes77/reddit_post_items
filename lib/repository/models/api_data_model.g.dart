@@ -1,7 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-// ignore_for_file: unused_element
-
 part of 'api_data_model.dart';
 
 // **************************************************************************
@@ -10,9 +8,9 @@ part of 'api_data_model.dart';
 
 ApiDataModel _$ApiDataModelFromJson(Map<String, dynamic> json) => ApiDataModel(
       author: json['author'] as String?,
-      numComments: json['num_comments'] as int?,
       title: json['title'] as String?,
       ups: json['ups'] as int?,
+      numComments: json['num_comments'] as int?,
       created: (json['created'] as num?)?.toDouble(),
       createdUtc: (json['createdUtc'] as num?)?.toDouble(),
     );

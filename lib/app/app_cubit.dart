@@ -9,11 +9,14 @@ import 'package:flutter/widgets.dart';
 class AppCubit extends Cubit<AppState> {
   AppCubit()
       : super(
-          const AppState(0, Locale.fromSubtags(languageCode: 'en')),
+          const AppState(
+              0, reloadHome: true, Locale.fromSubtags(languageCode: 'en')),
         );
 
-  void navigatePage(int newPage, {PostItem? postItem}) =>
-      emit(AppState(newPage, state.locale, postItem: postItem));
+  void navigatePage(int newPage,
+          {PostItem? postItem, bool realodHome = false}) =>
+      emit(AppState(newPage, state.locale,
+          postItem: postItem, reloadHome: realodHome));
 
   Future<void> onSwitchLanguage(Language language) async {
     final Locale locale;

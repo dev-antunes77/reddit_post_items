@@ -43,7 +43,7 @@ class _AppSkeletonState extends State<AppSkeleton> {
     final cubit = context.read<AppCubit>();
     switch (cubit.state.index) {
       case 0:
-        return const HomePage();
+        return HomePage(cubit.state.reloadHome);
       case 1:
         return CreatingPage(cubit.state.postItem);
       default:
