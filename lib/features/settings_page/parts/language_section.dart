@@ -22,8 +22,7 @@ class _LanguageSectionState extends State<LanguageSection> {
 
   @override
   void initState() {
-    isEnglishSelected =
-        context.read<SettingsCubit>().initialLocale.languageCode == "en";
+    _updateLanguageInit(context);
     super.initState();
   }
 
@@ -89,6 +88,14 @@ class _LanguageSectionState extends State<LanguageSection> {
               child: Text(AppLocalizations.current.no)),
         ],
       );
+
+  void _updateLanguageInit(BuildContext context) {
+    Locale locale = context.read<SettingsCubit>().initialLocale;
+    if (context.read<SettingsCubit>().state is SettingsUpdatedState) {
+      locale = context.read<AppCubit>().state.locale;
+    }
+    isEnglishSelected = locale.languageCode == "en";
+  }
 
   void _onConfirm(Language language) {
     Navigator.pop(context);

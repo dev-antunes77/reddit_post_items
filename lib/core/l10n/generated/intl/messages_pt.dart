@@ -23,14 +23,14 @@ class MessageLookup extends MessageLookupByLibrary {
   static String m0(error) => "Erro ao iniciar o app: ${error}";
 
   static String m1(language) =>
-      "Tem certeza que deseja alterar o idioma para ${language}";
+      "Tem certeza que deseja alterar o idioma para ${language}?";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "addToList": MessageLookupByLibrary.simpleMessage("Adicionar à lista"),
         "author": MessageLookupByLibrary.simpleMessage("Autor"),
         "away": MessageLookupByLibrary.simpleMessage(
-            "Você ficou longe por um tempo, meu amigo."),
+            "Você ficou longe por um tempo."),
         "comment":
             MessageLookupByLibrary.simpleMessage("Número de comentários"),
         "delete": MessageLookupByLibrary.simpleMessage("Deletar"),
@@ -48,7 +48,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "setLanguageConfimation": m1,
         "settings": MessageLookupByLibrary.simpleMessage("Configurações"),
         "takePicture": MessageLookupByLibrary.simpleMessage("Tirar foto"),
-        "timesUp": MessageLookupByLibrary.simpleMessage("Acabou o tempo"),
+        "timesUp": MessageLookupByLibrary.simpleMessage("Ops!"),
         "title": MessageLookupByLibrary.simpleMessage("Título"),
         "ups": MessageLookupByLibrary.simpleMessage("Número de ups"),
         "yes": MessageLookupByLibrary.simpleMessage("Sim"),

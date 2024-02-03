@@ -15,7 +15,7 @@
     "selectYourLanguage":"Selecione seu idioma",
     "portuguese":"Português",
     "english":"Inglês",
-    "setLanguageConfimation":"Tem certeza que deseja alterar o idioma para {language}",
+    "setLanguageConfimation":"Tem certeza que deseja alterar o idioma para {language}?",
     "@setLanguageConfimation":{
         "placeholders": {
             "language": {
@@ -23,8 +23,8 @@
             }
     }
 },
-"timesUp":"Acabou o tempo",
-"away":"Você ficou longe por um tempo, meu amigo.",
+"timesUp":"Ops!",
+"away":"Você ficou longe por um tempo.",
 "resumeAppError":"Erro ao iniciar o app: {error}",
 "@resumeAppError":{
     "placeholders": {

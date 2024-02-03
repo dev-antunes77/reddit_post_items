@@ -210,30 +210,30 @@ class AppLocalizations {
     );
   }
 
-  /// `Are you sure you want to set language to {language}`
+  /// `Are you sure you want to set language to {language}?`
   String setLanguageConfimation(String language) {
     return Intl.message(
-      'Are you sure you want to set language to $language',
+      'Are you sure you want to set language to $language?',
       name: 'setLanguageConfimation',
       desc: '',
       args: [language],
     );
   }
 
-  /// `Time's up`
+  /// `Ops!`
   String get timesUp {
     return Intl.message(
-      'Time\'s up',
+      'Ops!',
       name: 'timesUp',
       desc: '',
       args: [],
     );
   }
 
-  /// `You have been away fior a while, budy.`
+  /// `You have been away fior a while.`
   String get away {
     return Intl.message(
-      'You have been away fior a while, budy.',
+      'You have been away fior a while.',
       name: 'away',
       desc: '',
       args: [],
