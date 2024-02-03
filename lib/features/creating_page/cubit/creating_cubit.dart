@@ -1,3 +1,4 @@
+import 'package:api_mock/core/l10n/generated/l10n.dart';
 import 'package:api_mock/core/models/post_item.dart';
 import 'package:api_mock/repository/api_repository.dart';
 import 'package:bloc/bloc.dart';
@@ -18,7 +19,7 @@ class CreatingCubit extends Cubit<CreatingState> {
     } catch (exception) {
       emit(CreatingErrorState(
         item: state.item,
-        error: 'Error: ${exception.toString()}',
+        error: AppLocalizations.current.handlePostError(exception.toString()),
       ));
     }
   }
@@ -31,7 +32,7 @@ class CreatingCubit extends Cubit<CreatingState> {
     } catch (exception) {
       emit(CreatingErrorState(
         item: state.item,
-        error: 'Error: ${exception.toString()}',
+        error: AppLocalizations.current.handlePostError(exception.toString()),
       ));
     }
   }

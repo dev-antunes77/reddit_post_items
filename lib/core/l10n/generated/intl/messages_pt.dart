@@ -20,17 +20,19 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'pt';
 
-  static String m0(error) => "Erro ao iniciar o app: ${error}";
+  static String m0(error) => "Erro nessa postagem: ${error}";
 
-  static String m1(language) =>
-      "Tem certeza que deseja alterar o idioma para ${language}";
+  static String m1(error) => "Erro ao iniciar o app: ${error}";
+
+  static String m2(language) =>
+      "Tem certeza que deseja alterar o idioma para ${language}?";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "addToList": MessageLookupByLibrary.simpleMessage("Adicionar à lista"),
         "author": MessageLookupByLibrary.simpleMessage("Autor"),
         "away": MessageLookupByLibrary.simpleMessage(
-            "Você ficou longe por um tempo, meu amigo."),
+            "Você ficou longe por um tempo."),
         "comment":
             MessageLookupByLibrary.simpleMessage("Número de comentários"),
         "delete": MessageLookupByLibrary.simpleMessage("Deletar"),
@@ -38,17 +40,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "editing": MessageLookupByLibrary.simpleMessage("Edição"),
         "english": MessageLookupByLibrary.simpleMessage("Inglês"),
         "error": MessageLookupByLibrary.simpleMessage("Erro"),
+        "handlePostError": m0,
         "home": MessageLookupByLibrary.simpleMessage("Início"),
         "no": MessageLookupByLibrary.simpleMessage("Não"),
         "options": MessageLookupByLibrary.simpleMessage("Opções"),
         "portuguese": MessageLookupByLibrary.simpleMessage("Português"),
-        "resumeAppError": m0,
+        "resumeAppError": m1,
         "selectYourLanguage":
             MessageLookupByLibrary.simpleMessage("Selecione seu idioma"),
-        "setLanguageConfimation": m1,
+        "setLanguageConfimation": m2,
         "settings": MessageLookupByLibrary.simpleMessage("Configurações"),
         "takePicture": MessageLookupByLibrary.simpleMessage("Tirar foto"),
-        "timesUp": MessageLookupByLibrary.simpleMessage("Acabou o tempo"),
+        "timesUp": MessageLookupByLibrary.simpleMessage("Ops!"),
         "title": MessageLookupByLibrary.simpleMessage("Título"),
         "ups": MessageLookupByLibrary.simpleMessage("Número de ups"),
         "yes": MessageLookupByLibrary.simpleMessage("Sim"),

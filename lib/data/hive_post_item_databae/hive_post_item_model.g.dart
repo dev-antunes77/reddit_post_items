@@ -23,14 +23,15 @@ class PostItemHiveAdapter extends TypeAdapter<PostItemHive> {
       ups: fields[3] as int,
       numberOfComments: fields[4] as int,
       createdAt: fields[5] as DateTime,
-      fromHive: fields[6] as dynamic,
+      fromHive: fields[6] as bool,
+      hiveIndex: fields[7] as int,
     );
   }
 
   @override
   void write(BinaryWriter writer, PostItemHive obj) {
     writer
-      ..writeByte(7)
+      ..writeByte(8)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -44,7 +45,9 @@ class PostItemHiveAdapter extends TypeAdapter<PostItemHive> {
       ..writeByte(5)
       ..write(obj.createdAt)
       ..writeByte(6)
-      ..write(obj.fromHive);
+      ..write(obj.fromHive)
+      ..writeByte(7)
+      ..write(obj.hiveIndex);
   }
 
   @override

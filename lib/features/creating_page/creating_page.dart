@@ -19,7 +19,7 @@ class CreatingPage extends StatelessWidget {
           listenWhen: (previous, current) => previous != current,
           listener: (context, state) {
             if (state is CreatingSuccessState) {
-              context.read<AppCubit>().navigatePage(0);
+              context.read<AppCubit>().navigatePage(0, realodHome: true);
             } else if (state is CreatingErrorState) {
               CustomErrorSnackbar.showErrorSnackbar(context, 'error');
             }

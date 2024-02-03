@@ -30,6 +30,7 @@ class CreationForm extends StatelessWidget {
           child: Center(
               child: TextFormField(
             initialValue: initialValue,
+            textInputAction: TextInputAction.next,
             decoration: InputDecoration(
               border: InputBorder.none,
               labelText: label,

@@ -11,7 +11,8 @@ class HomeCubit extends Cubit<HomeState> {
   ) : super(HomeLoadingState());
   final ApiRepository _apiRepository;
 
-  Future<void> onInit() async {
+  Future<void> onInit(bool realodHome) async {
+    if (!realodHome) return;
     try {
       emit(HomeLoadingState());
       final result = await _getItems();

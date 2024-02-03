@@ -15,7 +15,7 @@
     "selectYourLanguage":"Select your language",
     "portuguese":"Portuguese",
     "english":"English",
-    "setLanguageConfimation":"Are you sure you want to set language to {language}",
+    "setLanguageConfimation":"Are you sure you want to set language to {language}?",
     "@setLanguageConfimation":{
         "placeholders": {
             "language": {
@@ -23,10 +23,18 @@
             }
     }
 },
-"timesUp":"Time's up",
-"away":"You have been away fior a while, budy.",
+"timesUp":"Ops!",
+"away":"You have been away fior a while.",
 "resumeAppError":"Error on resume app: {error}",
 "@resumeAppError":{
+    "placeholders": {
+        "error": {
+          "type": "String"
+        }
+    }
+},
+"handlePostError":"Error on handleing post: {error}",
+"@handlePostError":{
     "placeholders": {
         "error": {
           "type": "String"
