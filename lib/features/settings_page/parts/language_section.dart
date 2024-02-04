@@ -4,7 +4,7 @@ import 'package:api_mock/core/l10n/generated/l10n.dart';
 import 'package:api_mock/core/theme/text_styles_data.dart';
 import 'package:api_mock/features/settings_page/cubit/settings_cubit.dart';
 import 'package:api_mock/features/settings_page/widgets/language_pill.dart';
-import 'package:api_mock/utils/call_simple_dialog.dart';
+import 'package:api_mock/core/utils/call_simple_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

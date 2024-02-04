@@ -2,7 +2,6 @@ import 'package:api_mock/core/models/post_item.dart';
 import 'package:api_mock/data/post_item_database.dart';
 import 'package:api_mock/http_service/http_service.dart';
 import 'package:api_mock/repository/models/api_main_response.dart';
-import 'package:api_mock/utils/app_utils.dart';
 
 final class ApiRepository {
   ApiRepository(this._apiService, this._postItemdatabase);

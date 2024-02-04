@@ -11,7 +11,6 @@ import 'package:hive_flutter/adapters.dart';
 Future<void> main() async {
   late Locale initialLocale;
   Future<void> getSystemLocale() async {
-    WidgetsFlutterBinding.ensureInitialized();
     initialLocale = WidgetsBinding.instance.window.locale;
   }
 

@@ -4,7 +4,7 @@ import 'package:api_mock/core/models/post_item.dart';
 import 'package:api_mock/core/theme/text_styles_data.dart';
 import 'package:api_mock/features/creating_page/cubit/creating_cubit.dart';
 import 'package:api_mock/features/creating_page/parts/creating_content.dart';
-import 'package:api_mock/utils/call_simple_dialog.dart';
+import 'package:api_mock/core/utils/call_simple_dialog.dart';
 import 'package:api_mock/widgets/loading_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
