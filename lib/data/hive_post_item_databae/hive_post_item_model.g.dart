@@ -17,7 +17,6 @@ class PostItemHiveAdapter extends TypeAdapter<PostItemHive> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return PostItemHive(
-      id: fields[0] as String,
       title: fields[1] as String,
       author: fields[2] as String,
       ups: fields[3] as int,
@@ -31,9 +30,7 @@ class PostItemHiveAdapter extends TypeAdapter<PostItemHive> {
   @override
   void write(BinaryWriter writer, PostItemHive obj) {
     writer
-      ..writeByte(8)
-      ..writeByte(0)
-      ..write(obj.id)
+      ..writeByte(7)
       ..writeByte(1)
       ..write(obj.title)
       ..writeByte(2)

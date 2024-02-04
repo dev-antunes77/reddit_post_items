@@ -1,5 +1,4 @@
 import 'package:api_mock/core/models/post_item.dart';
-import 'package:api_mock/utils/app_utils.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'api_data_model.g.dart';
@@ -27,7 +26,6 @@ final class ApiDataModel {
   final int? numComments;
 
   PostItem toApiDataModel() => PostItem(
-        id: AppUtils.generateRandomId(),
         title: title ?? '',
         author: author ?? '',
         ups: ups ?? 0,

@@ -6,7 +6,6 @@ part 'hive_post_item_model.g.dart';
 @HiveType(typeId: 0)
 final class PostItemHive extends PostItem with HiveObjectMixin {
   PostItemHive({
-    required super.id,
     required super.title,
     required super.author,
     required super.ups,
@@ -17,17 +16,14 @@ final class PostItemHive extends PostItem with HiveObjectMixin {
   });
 
   factory PostItemHive.fromPostItem(PostItem item) => PostItemHive(
-      id: item.id,
-      title: item.title,
-      author: item.author,
-      ups: item.ups,
-      numberOfComments: item.numberOfComments,
-      createdAt: item.createdAt,
-      fromHive: item.fromHive,
-      hiveIndex: item.hiveIndex);
-  @override
-  @HiveField(0)
-  String get id => super.id;
+        title: item.title,
+        author: item.author,
+        ups: item.ups,
+        numberOfComments: item.numberOfComments,
+        createdAt: item.createdAt,
+        fromHive: item.fromHive,
+        hiveIndex: item.hiveIndex,
+      );
 
   @override
   @HiveField(1)

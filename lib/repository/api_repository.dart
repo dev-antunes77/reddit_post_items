@@ -27,15 +27,12 @@ final class ApiRepository {
   Future<PostItem> create(PostItem item) async {
     final items = await _postItemdatabase.get();
     final newHiveIndex = items.isEmpty ? 0 : items.length;
-    final toCreate = item.copyWith(
-        id: AppUtils.generateRandomId(),
-        hiveIndex: newHiveIndex,
-        fromHive: true);
+    final toCreate = item.copyWith(hiveIndex: newHiveIndex, fromHive: true);
     await _postItemdatabase.create(toCreate);
     return toCreate;
   }
 
-  Future<void> delete(String id) => _postItemdatabase.delete(id);
+  Future<void> delete(int hiveIndex) => _postItemdatabase.delete(hiveIndex);
 
   Future<void> update(PostItem item) async => _postItemdatabase.update(item);
 }

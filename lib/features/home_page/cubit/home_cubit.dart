@@ -24,10 +24,10 @@ class HomeCubit extends Cubit<HomeState> {
 
   Future<List<PostItem>> _getItems() async => _apiRepository.getAllPosts();
 
-  Future<void> delete(String id) async {
+  Future<void> delete(int hiveIndex) async {
     try {
       emit(HomeLoadingState());
-      await _apiRepository.delete(id);
+      await _apiRepository.delete(hiveIndex);
       final result = await _getItems();
       emit(HomeSuccessState(posts: result));
     } catch (exception) {

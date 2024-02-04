@@ -127,7 +127,7 @@ Future<dynamic> _callEditiOrDeleteDialog(BuildContext context, PostItem item) =>
         TextButton(
             onPressed: () {
               Navigator.pop(context);
-              context.read<HomeCubit>().delete(item.id);
+              context.read<HomeCubit>().delete(item.hiveIndex);
             },
             child: Text(AppLocalizations.current.delete)),
       ],

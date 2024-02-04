@@ -1,11 +1,4 @@
-import 'package:uuid/uuid.dart';
-
 abstract class AppUtils {
-  static String generateRandomId() {
-    const Uuid uuid = Uuid();
-    return uuid.v4();
-  }
-
   static String formatNumber(int number) {
     if (number >= 1000000000) {
       double result = number / 1000000000;
