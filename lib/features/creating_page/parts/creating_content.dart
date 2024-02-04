@@ -86,8 +86,8 @@ class _CreatingPageState extends State<CreatingContent> {
                     ),
                     onPressed: creatingCubit.validToProceed
                         ? isEditing
-                            ? () => creatingCubit.updatePost()
-                            : () => creatingCubit.addPost()
+                            ? () => creatingCubit.updatePostItem()
+                            : () => creatingCubit.createPostItem()
                         : null,
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),

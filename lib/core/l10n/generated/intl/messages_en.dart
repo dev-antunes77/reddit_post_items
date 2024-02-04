@@ -33,12 +33,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "author": MessageLookupByLibrary.simpleMessage("Author"),
         "away": MessageLookupByLibrary.simpleMessage(
             "You have been away fior a while."),
+        "backToHome": MessageLookupByLibrary.simpleMessage("Back to home page"),
+        "closeApp": MessageLookupByLibrary.simpleMessage("Close app"),
         "comment": MessageLookupByLibrary.simpleMessage("Number of comments"),
         "delete": MessageLookupByLibrary.simpleMessage("Delete"),
         "edid": MessageLookupByLibrary.simpleMessage("Edit"),
         "editing": MessageLookupByLibrary.simpleMessage("Editing"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "error": MessageLookupByLibrary.simpleMessage("Error"),
+        "errorBringPostItems": MessageLookupByLibrary.simpleMessage(
+            "An error has occured when attempting to load your post items."),
+        "errorOnItemHandling": MessageLookupByLibrary.simpleMessage(
+            "Something went wrong with this item"),
         "handlePostError": m0,
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "no": MessageLookupByLibrary.simpleMessage("No"),
@@ -52,6 +58,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "takePicture": MessageLookupByLibrary.simpleMessage("Take a picture"),
         "timesUp": MessageLookupByLibrary.simpleMessage("Ops!"),
         "title": MessageLookupByLibrary.simpleMessage("Title"),
+        "tryAgain": MessageLookupByLibrary.simpleMessage("Try again"),
         "ups": MessageLookupByLibrary.simpleMessage("number of ups"),
         "yes": MessageLookupByLibrary.simpleMessage("Yes"),
         "yourFeed": MessageLookupByLibrary.simpleMessage("Your feed")

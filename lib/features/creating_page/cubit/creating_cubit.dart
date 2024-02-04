@@ -11,7 +11,7 @@ class CreatingCubit extends Cubit<CreatingState> {
 
   final ApiRepository _apiRepository;
 
-  Future<void> addPost() async {
+  Future<void> createPostItem() async {
     try {
       emit(CreatingLoadingState(item: state.item));
       await _apiRepository.create(state.item);
@@ -24,7 +24,7 @@ class CreatingCubit extends Cubit<CreatingState> {
     }
   }
 
-  Future<void> updatePost() async {
+  Future<void> updatePostItem() async {
     try {
       emit(CreatingLoadingState(item: state.item));
       await _apiRepository.update(state.item);

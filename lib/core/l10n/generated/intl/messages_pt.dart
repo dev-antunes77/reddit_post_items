@@ -33,6 +33,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "author": MessageLookupByLibrary.simpleMessage("Autor"),
         "away": MessageLookupByLibrary.simpleMessage(
             "Você ficou longe por um tempo."),
+        "backToHome":
+            MessageLookupByLibrary.simpleMessage("Voltar à página inicial"),
+        "closeApp": MessageLookupByLibrary.simpleMessage("Fechar o app"),
         "comment":
             MessageLookupByLibrary.simpleMessage("Número de comentários"),
         "delete": MessageLookupByLibrary.simpleMessage("Deletar"),
@@ -40,6 +43,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "editing": MessageLookupByLibrary.simpleMessage("Edição"),
         "english": MessageLookupByLibrary.simpleMessage("Inglês"),
         "error": MessageLookupByLibrary.simpleMessage("Erro"),
+        "errorBringPostItems": MessageLookupByLibrary.simpleMessage(
+            "Aconteceu um erro ao carregar seus items"),
+        "errorOnItemHandling": MessageLookupByLibrary.simpleMessage(
+            "Alguma coisa deu errado com esse item"),
         "handlePostError": m0,
         "home": MessageLookupByLibrary.simpleMessage("Início"),
         "no": MessageLookupByLibrary.simpleMessage("Não"),
@@ -53,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "takePicture": MessageLookupByLibrary.simpleMessage("Tirar foto"),
         "timesUp": MessageLookupByLibrary.simpleMessage("Ops!"),
         "title": MessageLookupByLibrary.simpleMessage("Título"),
+        "tryAgain": MessageLookupByLibrary.simpleMessage("Tentar novamente"),
         "ups": MessageLookupByLibrary.simpleMessage("Número de ups"),
         "yes": MessageLookupByLibrary.simpleMessage("Sim"),
         "yourFeed": MessageLookupByLibrary.simpleMessage("Sua lista")
