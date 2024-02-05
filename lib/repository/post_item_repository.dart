@@ -1,7 +1,7 @@
 import 'package:api_mock/core/models/post_item.dart';
 import 'package:api_mock/data/post_item_database.dart';
 import 'package:api_mock/http_service/http_service.dart';
-import 'package:api_mock/repository/api_repository.dart';
+import 'package:api_mock/repository/reddit_repository.dart';
 import 'package:api_mock/repository/models/post_item_main_response.dart';
 
 final class PostItemRepository implements ApiRepository {
@@ -29,7 +29,7 @@ final class PostItemRepository implements ApiRepository {
   @override
   Future<PostItem> create(PostItem item) async {
     final items = await _postItemdatabase.get();
-    final newHiveIndex = items.isEmpty ? 0 : items.length;
+    final newHiveIndex = items.isEmpty ? 0 : items.last.hiveIndex + 1;
     final toCreate = item.copyWith(hiveIndex: newHiveIndex, fromHive: true);
     await _postItemdatabase.create(toCreate);
     return toCreate;
