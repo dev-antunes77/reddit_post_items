@@ -1,12 +1,12 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:api_mock/app/app_cubit.dart';
-import 'package:api_mock/app/app_skeleton.dart';
-import 'package:api_mock/core/l10n/generated/l10n.dart';
-import 'package:api_mock/features/creating_page/cubit/creating_cubit.dart';
-import 'package:api_mock/features/home_page/cubit/home_cubit.dart';
-import 'package:api_mock/features/settings_page/cubit/settings_cubit.dart';
-import 'package:api_mock/repository/post_item_repository.dart';
-import 'package:api_mock/services/notification_service.dart';
+import 'package:reddit_post_items/app/app_cubit.dart';
+import 'package:reddit_post_items/app/app_skeleton.dart';
+import 'package:reddit_post_items/core/l10n/generated/l10n.dart';
+import 'package:reddit_post_items/features/creating_page/cubit/creating_cubit.dart';
+import 'package:reddit_post_items/features/home_page/cubit/home_cubit.dart';
+import 'package:reddit_post_items/features/settings_page/cubit/settings_cubit.dart';
+import 'package:reddit_post_items/repository/post_item_repository.dart';
+import 'package:reddit_post_items/services/notification_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';

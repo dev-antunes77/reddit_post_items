@@ -1,4 +1,4 @@
-import 'package:api_mock/core/models/post_item.dart';
+import 'package:reddit_post_items/core/models/post_item.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'post_item_data_model.g.dart';

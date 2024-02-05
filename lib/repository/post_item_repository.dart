@@ -1,8 +1,8 @@
-import 'package:api_mock/core/models/post_item.dart';
-import 'package:api_mock/data/post_item_database.dart';
-import 'package:api_mock/http_service/http_service.dart';
-import 'package:api_mock/repository/reddit_repository.dart';
-import 'package:api_mock/repository/models/post_item_main_response.dart';
+import 'package:reddit_post_items/core/models/post_item.dart';
+import 'package:reddit_post_items/data/post_item_database.dart';
+import 'package:reddit_post_items/http_service/http_service.dart';
+import 'package:reddit_post_items/repository/reddit_repository.dart';
+import 'package:reddit_post_items/repository/models/post_item_main_response.dart';
 
 final class PostItemRepository implements ApiRepository {
   PostItemRepository(this._apiService, this._postItemdatabase);

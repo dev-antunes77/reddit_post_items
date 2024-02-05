@@ -1,10 +1,9 @@
-import 'package:api_mock/app/app_state.dart';
-import 'package:api_mock/core/enums.dart';
-import 'package:api_mock/core/l10n/generated/l10n.dart';
-import 'package:api_mock/core/models/post_item.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:reddit_post_items/app/app_state.dart';
+import 'package:reddit_post_items/core/enums.dart';
+import 'package:reddit_post_items/core/l10n/generated/l10n.dart';
+import 'package:reddit_post_items/core/models/post_item.dart';
 
 class AppCubit extends Cubit<AppState> {
   AppCubit()

@@ -1,9 +1,9 @@
 import 'dart:io';
 
-import 'package:api_mock/core/l10n/generated/l10n.dart';
-import 'package:api_mock/features/settings_page/cubit/settings_cubit.dart';
-import 'package:api_mock/features/settings_page/parts/camera_section.dart';
-import 'package:api_mock/features/settings_page/parts/language_section.dart';
+import 'package:reddit_post_items/core/l10n/generated/l10n.dart';
+import 'package:reddit_post_items/features/settings_page/cubit/settings_cubit.dart';
+import 'package:reddit_post_items/features/settings_page/parts/camera_section.dart';
+import 'package:reddit_post_items/features/settings_page/parts/language_section.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

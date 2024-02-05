@@ -1,4 +1,4 @@
-import 'package:api_mock/repository/models/post_item_response_data.dart';
+import 'package:reddit_post_items/repository/models/post_item_response_data.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'post_item_main_response.g.dart';

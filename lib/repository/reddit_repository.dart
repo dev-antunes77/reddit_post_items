@@ -1,4 +1,4 @@
-import 'package:api_mock/core/models/post_item.dart';
+import 'package:reddit_post_items/core/models/post_item.dart';
 
 abstract interface class ApiRepository {
   Future<List<PostItem>> getAllPosts();

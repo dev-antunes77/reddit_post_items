@@ -1,16 +1,16 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:api_mock/core/life_cycle/interaction_timer.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'package:api_mock/app/app_cubit.dart';
-import 'package:api_mock/core/theme/app_colors.dart';
-import 'package:api_mock/features/creating_page/creating_page.dart';
-import 'package:api_mock/features/home_page/home_page.dart';
-import 'package:api_mock/features/home_page/parts/home_nav_bar.dart';
-import 'package:api_mock/features/home_page/parts/home_scaffold.dart';
-import 'package:api_mock/features/settings_page/settings_page.dart';
-import 'package:api_mock/services/notification_service.dart';
+import 'package:reddit_post_items/app/app_cubit.dart';
+import 'package:reddit_post_items/core/life_cycle/interaction_timer.dart';
+import 'package:reddit_post_items/core/theme/app_colors.dart';
+import 'package:reddit_post_items/features/creating_page/creating_page.dart';
+import 'package:reddit_post_items/features/home_page/home_page.dart';
+import 'package:reddit_post_items/features/home_page/parts/home_nav_bar.dart';
+import 'package:reddit_post_items/features/home_page/parts/home_scaffold.dart';
+import 'package:reddit_post_items/features/settings_page/settings_page.dart';
+import 'package:reddit_post_items/services/notification_service.dart';
 
 class AppSkeleton extends StatefulWidget {
   const AppSkeleton(
