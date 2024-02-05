@@ -1,18 +1,18 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'api_main_response.dart';
+part of 'post_item_children.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-ApiMainResponse _$ApiMainResponseFromJson(Map<String, dynamic> json) =>
-    ApiMainResponse(
+PostItemChildren _$PostItemChildrenFromJson(Map<String, dynamic> json) =>
+    PostItemChildren(
       kind: json['kind'] as String,
-      data: ApiResponseData.fromJson(json['data'] as Map<String, dynamic>),
+      data: PostItemDataModel.fromJson(json['data'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$ApiMainResponseToJson(ApiMainResponse instance) =>
+Map<String, dynamic> _$PostItemChildrenToJson(PostItemChildren instance) =>
     <String, dynamic>{
       'kind': instance.kind,
       'data': instance.data,

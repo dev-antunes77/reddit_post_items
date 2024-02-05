@@ -1,12 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'api_data_model.dart';
+part of 'post_item_data_model.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-ApiDataModel _$ApiDataModelFromJson(Map<String, dynamic> json) => ApiDataModel(
+PostItemDataModel _$PostItemDataModelFromJson(Map<String, dynamic> json) =>
+    PostItemDataModel(
       author: json['author'] as String?,
       title: json['title'] as String?,
       ups: json['ups'] as int?,
@@ -15,7 +16,7 @@ ApiDataModel _$ApiDataModelFromJson(Map<String, dynamic> json) => ApiDataModel(
       createdUtc: (json['createdUtc'] as num?)?.toDouble(),
     );
 
-Map<String, dynamic> _$ApiDataModelToJson(ApiDataModel instance) =>
+Map<String, dynamic> _$PostItemDataModelToJson(PostItemDataModel instance) =>
     <String, dynamic>{
       'author': instance.author,
       'title': instance.title,
