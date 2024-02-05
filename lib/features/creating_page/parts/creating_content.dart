@@ -1,12 +1,12 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:api_mock/core/l10n/generated/l10n.dart';
-import 'package:api_mock/core/models/post_item.dart';
-import 'package:api_mock/core/theme/app_colors.dart';
-import 'package:api_mock/features/creating_page/cubit/creating_cubit.dart';
+import 'package:reddit_post_items/core/l10n/generated/l10n.dart';
+import 'package:reddit_post_items/core/models/post_item.dart';
+import 'package:reddit_post_items/core/theme/app_colors.dart';
+import 'package:reddit_post_items/features/creating_page/cubit/creating_cubit.dart';
 import 'package:flutter/material.dart';
 
-import 'package:api_mock/core/theme/text_styles_data.dart';
-import 'package:api_mock/features/creating_page/widgets/creation_form.dart';
+import 'package:reddit_post_items/core/theme/text_styles_data.dart';
+import 'package:reddit_post_items/features/creating_page/widgets/creation_form.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CreatingContent extends StatefulWidget {

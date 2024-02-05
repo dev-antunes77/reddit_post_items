@@ -1,6 +1,6 @@
-import 'package:api_mock/core/models/post_item.dart';
-import 'package:api_mock/data/hive_post_item_databae/hive_post_item_model.dart';
-import 'package:api_mock/data/post_item_database.dart';
+import 'package:reddit_post_items/core/models/post_item.dart';
+import 'package:reddit_post_items/data/hive_post_item_databae/hive_post_item_model.dart';
+import 'package:reddit_post_items/data/post_item_database.dart';
 import 'package:hive/hive.dart';
 
 final class HivePostItemDatabase implements PostItemDatabase {

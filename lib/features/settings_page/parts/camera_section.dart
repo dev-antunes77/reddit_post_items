@@ -1,10 +1,10 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:api_mock/features/settings_page/cubit/settings_cubit.dart';
+import 'package:reddit_post_items/features/settings_page/cubit/settings_cubit.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 
-import 'package:api_mock/core/theme/app_colors.dart';
-import 'package:api_mock/widgets/loading_animation.dart';
+import 'package:reddit_post_items/core/theme/app_colors.dart';
+import 'package:reddit_post_items/widgets/loading_animation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CameraSection extends StatefulWidget {

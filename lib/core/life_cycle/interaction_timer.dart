@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:api_mock/app/app_cubit.dart';
-import 'package:api_mock/core/l10n/generated/l10n.dart';
-import 'package:api_mock/core/models/notification.dart';
-import 'package:api_mock/features/home_page/cubit/home_cubit.dart';
-import 'package:api_mock/services/notification_service.dart';
+import 'package:reddit_post_items/app/app_cubit.dart';
+import 'package:reddit_post_items/core/l10n/generated/l10n.dart';
+import 'package:reddit_post_items/core/models/notification.dart';
+import 'package:reddit_post_items/features/home_page/cubit/home_cubit.dart';
+import 'package:reddit_post_items/services/notification_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

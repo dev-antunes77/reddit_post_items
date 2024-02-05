@@ -1,6 +1,6 @@
-import 'package:api_mock/core/l10n/generated/l10n.dart';
-import 'package:api_mock/core/models/post_item.dart';
-import 'package:api_mock/repository/post_item_repository.dart';
+import 'package:reddit_post_items/core/l10n/generated/l10n.dart';
+import 'package:reddit_post_items/core/models/post_item.dart';
+import 'package:reddit_post_items/repository/post_item_repository.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 

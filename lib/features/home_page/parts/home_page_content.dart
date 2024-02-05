@@ -1,10 +1,10 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:api_mock/core/l10n/generated/l10n.dart';
-import 'package:api_mock/core/theme/text_styles_data.dart';
-import 'package:api_mock/features/home_page/widgets/post_item_card.dart';
+import 'package:reddit_post_items/core/l10n/generated/l10n.dart';
+import 'package:reddit_post_items/core/theme/text_styles_data.dart';
+import 'package:reddit_post_items/features/home_page/widgets/post_item_card.dart';
 import 'package:flutter/material.dart';
 
-import 'package:api_mock/features/home_page/cubit/home_cubit.dart';
+import 'package:reddit_post_items/features/home_page/cubit/home_cubit.dart';
 
 class HomePageContent extends StatelessWidget {
   const HomePageContent(

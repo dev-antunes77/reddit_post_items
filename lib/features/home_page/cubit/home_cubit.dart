@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:api_mock/repository/post_item_repository.dart';
+import 'package:reddit_post_items/repository/post_item_repository.dart';
 import 'package:bloc/bloc.dart';
-import 'package:api_mock/core/models/post_item.dart';
+import 'package:reddit_post_items/core/models/post_item.dart';
 
 part 'home_state.dart';
 

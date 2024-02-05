@@ -1,11 +1,11 @@
-import 'package:api_mock/app/app_cubit.dart';
-import 'package:api_mock/core/l10n/generated/l10n.dart';
-import 'package:api_mock/core/models/post_item.dart';
-import 'package:api_mock/core/theme/text_styles_data.dart';
-import 'package:api_mock/features/creating_page/cubit/creating_cubit.dart';
-import 'package:api_mock/features/creating_page/parts/creating_content.dart';
-import 'package:api_mock/core/utils/call_simple_dialog.dart';
-import 'package:api_mock/widgets/loading_animation.dart';
+import 'package:reddit_post_items/app/app_cubit.dart';
+import 'package:reddit_post_items/core/l10n/generated/l10n.dart';
+import 'package:reddit_post_items/core/models/post_item.dart';
+import 'package:reddit_post_items/core/theme/text_styles_data.dart';
+import 'package:reddit_post_items/features/creating_page/cubit/creating_cubit.dart';
+import 'package:reddit_post_items/features/creating_page/parts/creating_content.dart';
+import 'package:reddit_post_items/core/utils/call_simple_dialog.dart';
+import 'package:reddit_post_items/widgets/loading_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

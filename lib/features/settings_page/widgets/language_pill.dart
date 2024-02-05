@@ -1,5 +1,5 @@
-import 'package:api_mock/core/theme/app_colors.dart';
-import 'package:api_mock/core/theme/text_styles_data.dart';
+import 'package:reddit_post_items/core/theme/app_colors.dart';
+import 'package:reddit_post_items/core/theme/text_styles_data.dart';
 import 'package:flutter/material.dart';
 
 class LanguagePill extends StatelessWidget {

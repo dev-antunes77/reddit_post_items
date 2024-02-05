@@ -1,5 +1,5 @@
-import 'package:api_mock/core/models/notification.dart';
-import 'package:api_mock/services/notification_service.dart';
+import 'package:reddit_post_items/core/models/notification.dart';
+import 'package:reddit_post_items/services/notification_service.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 final class LocalNotificationService implements NotificationService {
