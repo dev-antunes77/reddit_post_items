@@ -1,15 +1,15 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:api_mock/repository/post_item_repository.dart';
 import 'package:bloc/bloc.dart';
 import 'package:api_mock/core/models/post_item.dart';
-import 'package:api_mock/repository/api_repository.dart';
 
 part 'home_state.dart';
 
 class HomeCubit extends Cubit<HomeState> {
   HomeCubit(
-    this._apiRepository,
+    this._postItemRepository,
   ) : super(HomeLoadingState());
-  final ApiRepository _apiRepository;
+  final PostItemRepository _postItemRepository;
 
   Future<void> onInit(bool realodHome) async {
     if (!realodHome) return;
@@ -22,12 +22,12 @@ class HomeCubit extends Cubit<HomeState> {
     }
   }
 
-  Future<List<PostItem>> _getItems() async => _apiRepository.getAllPosts();
+  Future<List<PostItem>> _getItems() async => _postItemRepository.getAllPosts();
 
-  Future<void> delete(String id) async {
+  Future<void> delete(int hiveIndex) async {
     try {
       emit(HomeLoadingState());
-      await _apiRepository.delete(id);
+      await _postItemRepository.delete(hiveIndex);
       final result = await _getItems();
       emit(HomeSuccessState(posts: result));
     } catch (exception) {

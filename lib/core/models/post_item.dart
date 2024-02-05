@@ -2,7 +2,6 @@
 
 class PostItem {
   PostItem({
-    this.id = '',
     required this.title,
     required this.author,
     required this.ups,
@@ -11,7 +10,6 @@ class PostItem {
     this.fromHive = false,
     this.hiveIndex = 0,
   });
-  final String id;
   final String title;
   final String author;
   final int ups;
@@ -21,7 +19,6 @@ class PostItem {
   final int hiveIndex;
 
   PostItem copyWith({
-    String? id,
     String? title,
     String? author,
     int? ups,
@@ -31,7 +28,6 @@ class PostItem {
     int? hiveIndex,
   }) {
     return PostItem(
-      id: id ?? this.id,
       title: title ?? this.title,
       author: author ?? this.author,
       ups: ups ?? this.ups,

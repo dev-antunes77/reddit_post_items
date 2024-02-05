@@ -22,15 +22,16 @@ final class HivePostItemDatabase implements PostItemDatabase {
   Future<void> update(PostItem item) async {
     final itemBox = await _openBox();
     final hiveList = itemBox.values.toList();
-    final hiveItem = hiveList.firstWhere((element) => element.id == item.id);
+    final hiveItem =
+        hiveList.firstWhere((element) => element.hiveIndex == item.hiveIndex);
     final hiveItemIndex = itemBox.values.toList().indexOf(hiveItem);
     return itemBox.putAt(hiveItemIndex, PostItemHive.fromPostItem(item));
   }
 
   @override
-  Future<void> delete(String id) async {
+  Future<void> delete(int hiveIndex) async {
     final itemBox = await _openBox();
-    return itemBox.delete(id);
+    return itemBox.delete(hiveIndex);
   }
 
   Future<Box<PostItemHive>> _openBox() async {

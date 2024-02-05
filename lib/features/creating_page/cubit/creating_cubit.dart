@@ -1,20 +1,20 @@
 import 'package:api_mock/core/l10n/generated/l10n.dart';
 import 'package:api_mock/core/models/post_item.dart';
-import 'package:api_mock/repository/api_repository.dart';
+import 'package:api_mock/repository/post_item_repository.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 
 part 'creating_state.dart';
 
 class CreatingCubit extends Cubit<CreatingState> {
-  CreatingCubit(this._apiRepository) : super(CreatingInitialState());
+  CreatingCubit(this._postItemRepository) : super(CreatingInitialState());
 
-  final ApiRepository _apiRepository;
+  final PostItemRepository _postItemRepository;
 
-  Future<void> addPost() async {
+  Future<void> createPostItem() async {
     try {
       emit(CreatingLoadingState(item: state.item));
-      await _apiRepository.create(state.item);
+      await _postItemRepository.create(state.item);
       emit(CreatingSuccessState());
     } catch (exception) {
       emit(CreatingErrorState(
@@ -24,10 +24,10 @@ class CreatingCubit extends Cubit<CreatingState> {
     }
   }
 
-  Future<void> updatePost() async {
+  Future<void> updatePostItem() async {
     try {
       emit(CreatingLoadingState(item: state.item));
-      await _apiRepository.update(state.item);
+      await _postItemRepository.update(state.item);
       emit(CreatingSuccessState());
     } catch (exception) {
       emit(CreatingErrorState(

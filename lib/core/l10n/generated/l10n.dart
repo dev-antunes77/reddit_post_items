@@ -180,6 +180,56 @@ class AppLocalizations {
     );
   }
 
+  /// `An error has occured when attempting to load your post items.`
+  String get errorBringPostItems {
+    return Intl.message(
+      'An error has occured when attempting to load your post items.',
+      name: 'errorBringPostItems',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Something went wrong with this item`
+  String get errorOnItemHandling {
+    return Intl.message(
+      'Something went wrong with this item',
+      name: 'errorOnItemHandling',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Try again`
+  String get tryAgain {
+    return Intl.message(
+      'Try again',
+      name: 'tryAgain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Close app`
+  String get closeApp {
+    return Intl.message(
+      'Close app',
+      name: 'closeApp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Back to home page`
+  String get backToHome {
+    return Intl.message(
+      'Back to home page',
+      name: 'backToHome',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Select your language`
   String get selectYourLanguage {
     return Intl.message(

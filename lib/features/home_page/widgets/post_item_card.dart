@@ -6,8 +6,8 @@ import 'package:api_mock/core/theme/text_styles_data.dart';
 import 'package:api_mock/features/home_page/cubit/home_cubit.dart';
 import 'package:api_mock/features/home_page/widgets/list_item_tile_info.dart';
 import 'package:api_mock/features/home_page/widgets/thin_vertical_divider.dart';
-import 'package:api_mock/utils/app_utils.dart';
-import 'package:api_mock/utils/call_simple_dialog.dart';
+import 'package:api_mock/core/utils/app_utils.dart';
+import 'package:api_mock/core/utils/call_simple_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -40,17 +40,17 @@ class PostItemCard extends StatelessWidget {
               ListTile(
                 title: Text(
                   postItem.author.capitalize(),
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16.0,
-                  ),
+                  style: TextStyleData.listItemTitle,
                 ),
                 subtitle: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 6),
-                      child: Text(postItem.title),
+                      child: Text(
+                        postItem.title,
+                        style: TextStyleData.listItemSubtitle,
+                      ),
                     ),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -127,7 +127,7 @@ Future<dynamic> _callEditiOrDeleteDialog(BuildContext context, PostItem item) =>
         TextButton(
             onPressed: () {
               Navigator.pop(context);
-              context.read<HomeCubit>().delete(item.id);
+              context.read<HomeCubit>().delete(item.hiveIndex);
             },
             child: Text(AppLocalizations.current.delete)),
       ],

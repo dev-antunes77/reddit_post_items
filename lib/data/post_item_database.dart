@@ -4,5 +4,5 @@ abstract interface class PostItemDatabase {
   Future<List<PostItem>> get();
   Future<void> create(PostItem post);
   Future<void> update(PostItem post);
-  Future<void> delete(String id);
+  Future<void> delete(int hiveIndex);
 }

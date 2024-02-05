@@ -1,12 +1,11 @@
 import 'package:api_mock/core/models/post_item.dart';
-import 'package:api_mock/utils/app_utils.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'api_data_model.g.dart';
+part 'post_item_data_model.g.dart';
 
 @JsonSerializable()
-final class ApiDataModel {
-  ApiDataModel({
+final class PostItemDataModel {
+  PostItemDataModel({
     required this.author,
     required this.title,
     required this.ups,
@@ -15,8 +14,8 @@ final class ApiDataModel {
     required this.createdUtc,
   });
 
-  factory ApiDataModel.fromJson(Map<String, dynamic> json) =>
-      _$ApiDataModelFromJson(json);
+  factory PostItemDataModel.fromJson(Map<String, dynamic> json) =>
+      _$PostItemDataModelFromJson(json);
 
   final String? author;
   final String? title;
@@ -26,8 +25,7 @@ final class ApiDataModel {
   @JsonKey(name: 'num_comments')
   final int? numComments;
 
-  PostItem toApiDataModel() => PostItem(
-        id: AppUtils.generateRandomId(),
+  PostItem toPostItemDataModel() => PostItem(
         title: title ?? '',
         author: author ?? '',
         ups: ups ?? 0,
